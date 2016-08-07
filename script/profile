@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-function profile {
+function _launch_config_profile {
   local shome="${_launch_config_home:-"$(cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"}"
   PATH="$shome/bin:$PATH"
 }
 
-profile
+_launch_config_profile
